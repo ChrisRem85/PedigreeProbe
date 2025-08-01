@@ -1,0 +1,303 @@
+# Proband (G4 generation)
+FAM1	G4-1	G3-1	G3-2	1	-9	proband (proband)	1.0
+
+# Great-grandparents (G1 generation)
+FAM1	G1-1	0	0	1	-9	great-grandfather (proband->father->father->father)	0.125
+FAM1	G1-2	0	0	2	-9	great-grandmother (proband->father->father->mother)	0.125
+FAM1	G1-3	0	0	1	-9	great-grandfather (proband->father->mother->father)	0.125
+FAM1	G1-4	0	0	2	-9	great-grandmother (proband->father->mother->mother)	0.125
+FAM1	G1-5	0	0	1	-9	great-grandfather (proband->mother->father->father)	0.125
+FAM1	G1-6	0	0	2	-9	great-grandmother (proband->mother->father->mother)	0.125
+FAM1	G1-7	0	0	1	-9	great-grandfather (proband->mother->mother->father)	0.125
+FAM1	G1-8	0	0	2	-9	great-grandmother (proband->mother->mother->mother)	0.125
+
+# Grandparents (G2 generation)
+FAM1	G2-1	G1-1	G1-2	1	-9	grandfather (proband->father->father)	0.25
+FAM1	G2-2	G1-3	G1-4	2	-9	grandmother (proband->father->mother)	0.25
+FAM1	G2-3	G1-5	G1-6	1	-9	grandfather (proband->mother->father)	0.25
+FAM1	G2-4	G1-7	G1-8	2	-9	grandmother (proband->mother->mother)	0.25
+FAM1	G2-5	G1-1	G1-2	2	-9	grandaunt (proband->father->father->sister)	0.125
+FAM1	G2-5P	0	0	1	-9	grandaunt's partner (proband->father->father->sister->partner)	0.0
+FAM1	G2-6	G1-3	G1-4	1	-9	granduncle (proband->father->mother->brother)	0.125
+FAM1	G2-6P	0	0	2	-9	granduncle's partner (proband->father->mother->brother->partner)	0.0
+FAM1	G2-7	G1-5	G1-6	2	-9	grandaunt (proband->mother->father->sister)	0.125
+FAM1	G2-7P	0	0	1	-9	grandaunt's partner (proband->mother->father->sister->partner)	0.0
+FAM1	G2-8	G1-7	G1-8	1	-9	granduncle (proband->mother->mother->brother)	0.125
+FAM1	G2-8P	0	0	2	-9	granduncle's partner (proband->mother->mother->brother->partner)	0.0
+
+# Parents of proband, aunts and uncles (G3 generation)
+FAM1	G3-1	G2-1	G2-2	1	-9	father (proband->father)	0.5
+FAM1	G3-2	G2-3	G2-4	2	-9	mother (proband->mother)	0.5
+FAM1	G3-3	G2-1	G2-2	2	-9	aunt (proband->father->sister)	0.25
+FAM1	G3-3P	0	0	1	-9	aunt's partner (proband->father->sister->partner)	0.0
+FAM1	G3-4	G2-3	G2-4	1	-9	uncle (proband->mother->brother)	0.25
+FAM1	G3-4P	0	0	2	-9	uncle's partner (proband->mother->brother->partner)	0.0
+
+# Children of G2-5 & G2-5P (grandaunt & partner, paternal side)
+FAM1	G3-5	G2-5	G2-5P	1	-9	first cousin once removed (proband->father->father->sister->son)	0.0625
+FAM1	G3-5P	0	0	2	-9	first cousin once removed's partner (proband->father->father->sister->son->partner)	0.0
+FAM1	G3-6	G2-5	G2-5P	2	-9	first cousin once removed (proband->father->father->sister->daughter)	0.0625
+FAM1	G3-6P	0	0	1	-9	first cousin once removed's partner (proband->father->father->sister->daughter->partner)	0.0
+
+# Children of G2-6 & G2-6P (granduncle & partner, paternal side)
+FAM1	G3-7	G2-6	G2-6P	1	-9	first cousin once removed (proband->father->mother->brother->son)	0.0625
+FAM1	G3-7P	0	0	2	-9	first cousin once removed's partner (proband->father->mother->brother->son->partner)	0.0
+FAM1	G3-8	G2-6	G2-6P	2	-9	first cousin once removed (proband->father->mother->brother->daughter)	0.0625
+FAM1	G3-8P	0	0	1	-9	first cousin once removed's partner (proband->father->mother->brother->daughter->partner)	0.0
+
+# Children of G2-7 & G2-7P (grandaunt & partner, maternal side)
+FAM1	G3-9	G2-7	G2-7P	1	-9	first cousin once removed (proband->mother->father->sister->son)	0.0625
+FAM1	G3-9P	0	0	2	-9	first cousin once removed's partner (proband->mother->father->sister->son->partner)	0.0
+FAM1	G3-10	G2-7	G2-7P	2	-9	first cousin once removed (proband->mother->father->sister->daughter)	0.0625
+FAM1	G3-10P	0	0	1	-9	first cousin once removed's partner (proband->mother->father->sister->daughter->partner)	0.0
+
+# Children of G2-8 & G2-8P (granduncle & partner, maternal side)
+FAM1	G3-11	G2-8	G2-8P	1	-9	first cousin once removed (proband->mother->mother->brother->son)	0.0625
+FAM1	G3-11P	0	0	2	-9	first cousin once removed's partner (proband->mother->mother->brother->son->partner)	0.0
+FAM1	G3-12	G2-8	G2-8P	2	-9	first cousin once removed (proband->mother->mother->brother->daughter)	0.0625
+FAM1	G3-12P	0	0	1	-9	first cousin once removed's partner (proband->mother->mother->brother->daughter->partner)	0.0
+
+# Proband's partner (G4 generation)
+FAM1	G4-1P	0	0	2	-9	partner (proband->partner)	0.0
+
+# Siblings of proband (G4 generation)
+FAM1	G4-2	G3-1	G3-2	2	-9	sister (proband->sister)	0.5
+FAM1	G4-2P	0	0	1	-9	sister's partner (proband->sister->partner)	0.0
+
+# First cousins (G4 generation)
+FAM1	G4-3	G3-3	G3-3P	1	-9	first cousin (proband->father->sister->son)	0.125
+FAM1	G4-3P	0	0	2	-9	first cousin's partner (proband->father->sister->son->partner)	0.0
+FAM1	G4-4	G3-3	G3-3P	2	-9	first cousin (proband->father->sister->daughter)	0.125
+FAM1	G4-4P	0	0	1	-9	first cousin's partner (proband->father->daughter->partner)	0.0
+FAM1	G4-5	G3-4	G3-4P	1	-9	first cousin (proband->mother->brother->son)	0.125
+FAM1	G4-5P	0	0	2	-9	first cousin's partner (proband->mother->brother->son->partner)	0.0
+FAM1	G4-6	G3-4	G3-4P	2	-9	first cousin (proband->mother->brother->daughter)	0.125
+FAM1	G4-6P	0	0	1	-9	first cousin's partner (proband->mother->brother->daughter->partner)	0.0
+
+# Second cousins (G4 generation)
+FAM1	G4-7	G3-5	G3-5P	1	-9	second cousin (proband->father->father->sister->son->son)	0.03125
+FAM1	G4-7P	0	0	2	-9	second cousin's partner (proband->father->father->sister->son->son->partner)	0.0
+FAM1	G4-8	G3-5	G3-5P	2	-9	second cousin (proband->father->father->sister->son->daughter)	0.03125
+FAM1	G4-8P	0	0	1	-9	second cousin's partner (proband->father->father->sister->son->daughter->partner)	0.0
+FAM1	G4-9	G3-6	G3-6P	1	-9	second cousin (proband->father->father->sister->daughter->son)	0.03125
+FAM1	G4-9P	0	0	2	-9	second cousin's partner (proband->father->father->sister->daughter->son->partner)	0.0
+FAM1	G4-10	G3-6	G3-6P	2	-9	second cousin (proband->father->father->sister->daughter->daughter)	0.03125
+FAM1	G4-10P	0	0	1	-9	second cousin's partner (proband->father->father->sister->daughter->daughter->partner)	0.0
+FAM1	G4-11	G3-7	G3-7P	1	-9	second cousin (proband->father->mother->brother->son->son)	0.03125
+FAM1	G4-11P	0	0	2	-9	second cousin's partner (proband->father->mother->brother->son->son->partner)	0.0
+FAM1	G4-12	G3-7	G3-7P	2	-9	second cousin (proband->father->mother->brother->son->daughter)	0.03125
+FAM1	G4-12P	0	0	1	-9	second cousin's partner (proband->father->mother->brother->son->daughter->partner)	0.0
+FAM1	G4-13	G3-8	G3-8P	1	-9	second cousin (proband->father->mother->brother->daughter->son)	0.03125
+FAM1	G4-13P	0	0	2	-9	second cousin's partner (proband->father->mother->brother->daughter->son->partner)	0.0
+FAM1	G4-14	G3-8	G3-8P	2	-9	second cousin (proband->father->mother->brother->daughter->daughter)	0.03125
+FAM1	G4-14P	0	0	1	-9	second cousin's partner (proband->father->mother->brother->daughter->daughter->partner)	0.0
+FAM1	G4-15	G3-9	G3-9P	1	-9	second cousin (proband->mother->father->sister->son->son)	0.03125
+FAM1	G4-15P	0	0	2	-9	second cousin's partner (proband->mother->father->sister->son->son->partner)	0.0
+FAM1	G4-16	G3-9	G3-9P	2	-9	second cousin (proband->mother->father->sister->son->daughter)	0.03125
+FAM1	G4-16P	0	0	1	-9	second cousin's partner (proband->mother->father->sister->son->daughter->partner)	0.0
+FAM1	G4-17	G3-10	G3-10P	1	-9	second cousin (proband->mother->father->sister->daughter->son)	0.03125
+FAM1	G4-17P	0	0	2	-9	second cousin's partner (proband->mother->father->sister->daughter->son->partner)	0.0
+FAM1	G4-18	G3-10	G3-10P	2	-9	second cousin (proband->mother->father->sister->daughter->daughter)	0.03125
+FAM1	G4-18P	0	0	1	-9	second cousin's partner (proband->mother->father->sister->daughter->daughter->partner)	0.0
+FAM1	G4-19	G3-11	G3-11P	1	-9	second cousin (proband->mother->mother->brother->son->son)	0.03125
+FAM1	G4-19P	0	0	2	-9	second cousin's partner (proband->mother->mother->brother->son->son->partner)	0.0
+FAM1	G4-20	G3-11	G3-11P	2	-9	second cousin (proband->mother->mother->brother->son->daughter)	0.03125
+FAM1	G4-20P	0	0	1	-9	second cousin's partner (proband->mother->mother->brother->son->daughter->partner)	0.0
+FAM1	G4-21	G3-12	G3-12P	1	-9	second cousin (proband->mother->mother->brother->daughter->son)	0.03125
+FAM1	G4-21P	0	0	2	-9	second cousin's partner (proband->mother->mother->brother->daughter->son->partner)	0.0
+FAM1	G4-22	G3-12	G3-12P	2	-9	second cousin (proband->mother->mother->brother->daughter->daughter)	0.03125
+FAM1	G4-22P	0	0	1	-9	second cousin's partner (proband->mother->mother->brother->daughter->daughter->partner)	0.0
+
+# Children of proband (G5 generation)
+FAM1	G5-1	G4-1	G4-1P	1	-9	son (proband->son)	0.5
+FAM1	G5-1P	0	0	2	-9	son's partner (proband->son->partner)	0.0
+FAM1	G5-2	G4-1	G4-1P	2	-9	daughter (proband->daughter)	0.5
+FAM1	G5-2P	0	0	1	-9	daughter's partner (proband->daughter->partner)	0.0
+
+# Children of proband's sister (G5 generation)
+FAM1	G5-3	G4-2	G4-2P	1	-9	nephew (proband->sister->son)	0.25
+FAM1	G5-3P	0	0	2	-9	nephew's partner (proband->sister->son->partner)	0.0
+FAM1	G5-4	G4-2	G4-2P	2	-9	niece (proband->sister->daughter)	0.25
+FAM1	G5-4P	0	0	1	-9	niece's partner (proband->sister->daughter->partner)	0.0
+
+# Children of first cousins (G5 generation)
+FAM1	G5-5	G4-3	G4-3P	1	-9	first cousin once removed (proband->father->sister->son->son)	0.0625
+FAM1	G5-5P	0	0	2	-9	first cousin once removed's partner (proband->father->sister->son->son->partner)	0.0
+FAM1	G5-6	G4-3	G4-3P	2	-9	first cousin once removed (proband->father->sister->son->daughter)	0.0625
+FAM1	G5-6P	0	0	1	-9	first cousin once removed's partner (proband->father->sister->son->daughter->partner)	0.0
+FAM1	G5-7	G4-4	G4-4P	1	-9	first cousin once removed (proband->mother->brother->son->son)	0.0625
+FAM1	G5-7P	0	0	2	-9	first cousin once removed's partner (proband->mother->brother->son->son->partner)	0.0
+FAM1	G5-8	G4-4	G4-4P	2	-9	first cousin once removed (proband->mother->brother->daughter)	0.0625
+FAM1	G5-8P	0	0	1	-9	first cousin once removed's partner (proband->mother->brother->daughter->partner)	0.0
+FAM1	G5-9	G4-5	G4-5P	1	-9	first cousin once removed (proband->mother->brother->son->son)	0.0625
+FAM1	G5-9P	0	0	2	-9	first cousin once removed's partner (proband->mother->brother->son->son->partner)	0.0
+FAM1	G5-10	G4-5	G4-5P	2	-9	first cousin once removed (proband->mother->brother->daughter)	0.0625
+FAM1	G5-10P	0	0	1	-9	first cousin once removed's partner (proband->mother->brother->daughter->partner)	0.0
+FAM1	G5-11	G4-6	G4-6P	1	-9	first cousin once removed (proband->mother->brother->daughter->son)	0.0625
+FAM1	G5-11P	0	0	2	-9	first cousin once removed's partner (proband->mother->brother->daughter->son->partner)	0.0
+FAM1	G5-12	G4-6	G4-6P	2	-9	first cousin once removed (proband->mother->brother->daughter->daughter)	0.0625
+FAM1	G5-12P	0	0	1	-9	first cousin once removed's partner (proband->mother->brother->daughter->daughter->partner)	0.0
+
+# Children of second cousins (G5 generation) - CORRECTED
+FAM1	G5-13	G4-7	G4-7P	1	-9	second cousin once removed (proband->father->father->sister->son->son->son)	0.015625
+FAM1	G5-13P	0	0	2	-9	second cousin once removed's partner (proband->father->father->sister->son->son->son->partner)	0.0
+FAM1	G5-14	G4-7	G4-7P	2	-9	second cousin once removed (proband->father->father->sister->son->son->daughter)	0.015625
+FAM1	G5-14P	0	0	1	-9	second cousin once removed's partner (proband->father->father->sister->son->son->daughter->partner)	0.0
+FAM1	G5-15	G4-8	G4-8P	1	-9	second cousin once removed (proband->father->father->sister->son->daughter->son)	0.015625
+FAM1	G5-15P	0	0	2	-9	second cousin once removed's partner (proband->father->father->sister->son->daughter->son->partner)	0.0
+FAM1	G5-16	G4-8	G4-8P	2	-9	second cousin once removed (proband->father->father->sister->son->daughter->daughter)	0.015625
+FAM1	G5-16P	0	0	1	-9	second cousin once removed's partner (proband->father->father->sister->son->daughter->daughter->partner)	0.0
+FAM1	G5-17	G4-9	G4-9P	1	-9	second cousin once removed (proband->father->father->sister->daughter->son->son)	0.015625
+FAM1	G5-17P	0	0	2	-9	second cousin once removed's partner (proband->father->father->sister->daughter->son->son->partner)	0.0
+FAM1	G5-18	G4-9	G4-9P	2	-9	second cousin once removed (proband->father->father->sister->daughter->son->daughter)	0.015625
+FAM1	G5-18P	0	0	1	-9	second cousin once removed's partner (proband->father->father->sister->daughter->son->daughter->partner)	0.0
+FAM1	G5-19	G4-10	G4-10P	1	-9	second cousin once removed (proband->father->father->sister->daughter->daughter->son)	0.015625
+FAM1	G5-19P	0	0	2	-9	second cousin once removed's partner (proband->father->father->sister->daughter->daughter->son->partner)	0.0
+FAM1	G5-20	G4-10	G4-10P	2	-9	second cousin once removed (proband->father->father->sister->daughter->daughter->daughter)	0.015625
+FAM1	G5-20P	0	0	1	-9	second cousin once removed's partner (proband->father->father->sister->daughter->daughter->daughter->partner)	0.0
+FAM1	G5-21	G4-11	G4-11P	1	-9	second cousin once removed (proband->father->mother->brother->son->son->son)	0.015625
+FAM1	G5-21P	0	0	2	-9	second cousin once removed's partner (proband->father->mother->brother->son->son->son->partner)	0.0
+FAM1	G5-22	G4-11	G4-11P	2	-9	second cousin once removed (proband->father->mother->brother->son->son->daughter)	0.015625
+FAM1	G5-22P	0	0	1	-9	second cousin once removed's partner (proband->father->mother->brother->son->son->daughter->partner)	0.0
+FAM1	G5-23	G4-12	G4-12P	1	-9	second cousin once removed (proband->father->mother->brother->son->daughter->son)	0.015625
+FAM1	G5-23P	0	0	2	-9	second cousin once removed's partner (proband->father->mother->brother->son->daughter->son->partner)	0.0
+FAM1	G5-24	G4-12	G4-12P	2	-9	second cousin once removed (proband->father->mother->brother->son->daughter->daughter)	0.015625
+FAM1	G5-24P	0	0	1	-9	second cousin once removed's partner (proband->father->mother->brother->son->daughter->daughter->partner)	0.0
+FAM1	G5-25	G4-13	G4-13P	1	-9	second cousin once removed (proband->father->mother->brother->daughter->son->son)	0.015625
+FAM1	G5-25P	0	0	2	-9	second cousin once removed's partner (proband->father->mother->brother->daughter->son->son->partner)	0.0
+FAM1	G5-26	G4-13	G4-13P	2	-9	second cousin once removed (proband->father->mother->brother->daughter->son->daughter)	0.015625
+FAM1	G5-26P	0	0	1	-9	second cousin once removed's partner (proband->father->mother->brother->daughter->son->daughter->partner)	0.0
+FAM1	G5-27	G4-14	G4-14P	1	-9	second cousin once removed (proband->father->mother->brother->daughter->daughter->son)	0.015625
+FAM1	G5-27P	0	0	2	-9	second cousin once removed's partner (proband->father->mother->brother->daughter->daughter->son->partner)	0.0
+FAM1	G5-28	G4-14	G4-14P	2	-9	second cousin once removed (proband->father->mother->brother->daughter->daughter->daughter)	0.015625
+FAM1	G5-28P	0	0	1	-9	second cousin once removed's partner (proband->father->mother->brother->daughter->daughter->daughter->partner)	0.0
+FAM1	G5-29	G4-15	G4-15P	1	-9	second cousin once removed (proband->mother->father->sister->son->son->son)	0.015625
+FAM1	G5-29P	0	0	2	-9	second cousin once removed's partner (proband->mother->father->sister->son->son->son->partner)	0.0
+FAM1	G5-30	G4-15	G4-15P	2	-9	second cousin once removed (proband->mother->father->sister->son->son->daughter)	0.015625
+FAM1	G5-30P	0	0	1	-9	second cousin once removed's partner (proband->mother->father->sister->son->son->daughter->partner)	0.0
+FAM1	G5-31	G4-16	G4-16P	1	-9	second cousin once removed (proband->mother->father->sister->son->daughter->son)	0.015625
+FAM1	G5-31P	0	0	2	-9	second cousin once removed's partner (proband->mother->father->sister->son->daughter->son->partner)	0.0
+FAM1	G5-32	G4-16	G4-16P	2	-9	second cousin once removed (proband->mother->father->sister->son->daughter->daughter)	0.015625
+FAM1	G5-32P	0	0	1	-9	second cousin once removed's partner (proband->mother->father->sister->son->daughter->daughter->partner)	0.0
+FAM1	G5-33	G4-17	G4-17P	1	-9	second cousin once removed (proband->mother->father->sister->daughter->son->son)	0.015625
+FAM1	G5-33P	0	0	2	-9	second cousin once removed's partner (proband->mother->father->sister->daughter->son->son->partner)	0.0
+FAM1	G5-34	G4-17	G4-17P	2	-9	second cousin once removed (proband->mother->father->sister->daughter->son->daughter)	0.015625
+FAM1	G5-34P	0	0	1	-9	second cousin once removed's partner (proband->mother->father->sister->daughter->son->daughter->partner)	0.0
+FAM1	G5-35	G4-18	G4-18P	1	-9	second cousin once removed (proband->mother->father->sister->daughter->daughter->son)	0.015625
+FAM1	G5-35P	0	0	2	-9	second cousin once removed's partner (proband->mother->father->sister->daughter->daughter->son->partner)	0.0
+FAM1	G5-36	G4-18	G4-18P	2	-9	second cousin once removed (proband->mother->father->sister->daughter->daughter->daughter)	0.015625
+FAM1	G5-36P	0	0	1	-9	second cousin once removed's partner (proband->mother->father->sister->daughter->daughter->daughter->partner)	0.0
+FAM1	G5-37	G4-19	G4-19P	1	-9	second cousin once removed (proband->mother->mother->brother->son->son->son)	0.015625
+FAM1	G5-37P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->son->son->son->partner)	0.0
+FAM1	G5-38	G4-19	G4-19P	2	-9	second cousin once removed (proband->mother->mother->brother->son->son->daughter)	0.015625
+FAM1	G5-38P	0	0	1	-9	second cousin once removed's partner (proband->mother->mother->brother->son->son->daughter->partner)	0.0
+FAM1	G5-39	G4-20	G4-20P	1	-9	second cousin once removed (proband->mother->mother->brother->son->daughter->son)	0.015625
+FAM1	G5-39P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->son->daughter->son->partner)	0.0
+FAM1	G5-40	G4-20	G4-20P	2	-9	second cousin once removed (proband->mother->mother->brother->son->daughter->daughter)	0.015625
+FAM1	G5-40P	0	0	1	-9	second cousin once removed's partner (proband->mother->mother->brother->son->daughter->daughter->partner)	0.0
+FAM1	G5-41	G4-21	G4-21P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->son)	0.015625
+FAM1	G5-41P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->son->son->partner)	0.0
+FAM1	G5-42	G4-21	G4-21P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->daughter)	0.015625
+FAM1	G5-42P	0	0	1	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->son->daughter->partner)	0.0
+FAM1	G5-43	G4-22	G4-22P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->son)	0.015625
+FAM1	G5-43P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->daughter->son->partner)	0.0
+FAM1	G5-44	G4-22	G4-22P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->daughter)	0.015625
+FAM1	G5-44P	0	0	1	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->daughter->daughter->partner)	0.0
+
+# Complete Generation 6 - Children of all G5 individuals (without partners)
+FAM1	G6-1	G5-1	G5-1P	1	-9	grandson (proband->son->son)	0.25
+FAM1	G6-2	G5-1	G5-1P	2	-9	granddaughter (proband->son->daughter)	0.25
+FAM1	G6-3	G5-2	G5-2P	1	-9	grandson (proband->daughter->son)	0.25
+FAM1	G6-4	G5-2	G5-2P	2	-9	granddaughter (proband->daughter->daughter)	0.25
+FAM1	G6-5	G5-3	G5-3P	1	-9	grandnephew (proband->sister->son->son)	0.125
+FAM1	G6-6	G5-3	G5-3P	2	-9	grandniece (proband->sister->son->daughter)	0.125
+FAM1	G6-7	G5-4	G5-4P	1	-9	grandnephew (proband->sister->daughter->son)	0.125
+FAM1	G6-8	G5-4	G5-4P	2	-9	grandniece (proband->sister->daughter->daughter)	0.125
+FAM1	G6-9	G5-5	G5-5P	1	-9	first cousin twice removed (proband->father->sister->son->son->son)	0.03125
+FAM1	G6-10	G5-5	G5-5P	2	-9	first cousin twice removed (proband->father->sister->son->son->daughter)	0.03125
+FAM1	G6-11	G5-6	G5-6P	1	-9	first cousin twice removed (proband->father->sister->son->daughter->son)	0.03125
+FAM1	G6-12	G5-6	G5-6P	2	-9	first cousin twice removed (proband->father->sister->son->daughter->daughter)	0.03125
+FAM1	G6-13	G5-7	G5-7P	1	-9	first cousin twice removed (proband->father->sister->daughter->son->son)	0.03125
+FAM1	G6-14	G5-7	G5-7P	2	-9	first cousin twice removed (proband->father->sister->daughter->son->daughter)	0.03125
+FAM1	G6-15	G5-8	G5-8P	1	-9	first cousin twice removed (proband->father->sister->daughter->daughter->son)	0.03125
+FAM1	G6-16	G5-8	G5-8P	2	-9	first cousin twice removed (proband->father->sister->daughter->daughter->daughter)	0.03125
+FAM1	G6-17	G5-9	G5-9P	1	-9	first cousin twice removed (proband->mother->brother->son->son->son)	0.03125
+FAM1	G6-18	G5-9	G5-9P	2	-9	first cousin twice removed (proband->mother->brother->son->son->daughter)	0.03125
+FAM1	G6-19	G5-10	G5-10P	1	-9	first cousin twice removed (proband->mother->brother->son->daughter->son)	0.03125
+FAM1	G6-20	G5-10	G5-10P	2	-9	first cousin twice removed (proband->mother->brother->son->daughter->daughter)	0.03125
+FAM1	G6-21	G5-11	G5-11P	1	-9	first cousin twice removed (proband->mother->brother->daughter->son->son)	0.03125
+FAM1	G6-22	G5-11	G5-11P	2	-9	first cousin twice removed (proband->mother->brother->daughter->son->daughter)	0.03125
+FAM1	G6-23	G5-12	G5-12P	1	-9	first cousin twice removed (proband->mother->brother->daughter->daughter->son)	0.03125
+FAM1	G6-24	G5-12	G5-12P	2	-9	first cousin twice removed (proband->mother->brother->daughter->daughter->daughter)	0.03125
+FAM1	G6-25	G5-13	G5-13P	1	-9	second cousin twice removed (proband->father->father->sister->son->son->son->son)	0.0078125
+FAM1	G6-26	G5-13	G5-13P	2	-9	second cousin twice removed (proband->father->father->sister->son->son->son->daughter)	0.0078125
+FAM1	G6-27	G5-14	G5-14P	1	-9	second cousin twice removed (proband->father->father->sister->son->son->daughter->son)	0.0078125
+FAM1	G6-28	G5-14	G5-14P	2	-9	second cousin twice removed (proband->father->father->sister->son->son->daughter->daughter)	0.0078125
+FAM1	G6-29	G5-15	G5-15P	1	-9	second cousin twice removed (proband->father->father->sister->son->daughter->son->son)	0.0078125
+FAM1	G6-30	G5-15	G5-15P	2	-9	second cousin twice removed (proband->father->father->sister->son->daughter->son->daughter)	0.0078125
+FAM1	G6-31	G5-16	G5-16P	1	-9	second cousin twice removed (proband->father->father->sister->son->daughter->daughter->son)	0.0078125
+FAM1	G6-32	G5-16	G5-16P	2	-9	second cousin twice removed (proband->father->father->sister->son->daughter->daughter->daughter)	0.0078125
+FAM1	G6-33	G5-17	G5-17P	1	-9	second cousin twice removed (proband->father->father->sister->daughter->son->son->son)	0.0078125
+FAM1	G6-34	G5-17	G5-17P	2	-9	second cousin twice removed (proband->father->father->sister->daughter->son->son->daughter)	0.0078125
+FAM1	G6-35	G5-18	G5-18P	1	-9	second cousin twice removed (proband->father->father->sister->daughter->son->daughter->son)	0.0078125
+FAM1	G6-36	G5-18	G5-18P	2	-9	second cousin twice removed (proband->father->father->sister->daughter->son->daughter->daughter)	0.0078125
+FAM1	G6-37	G5-19	G5-19P	1	-9	second cousin twice removed (proband->father->father->sister->daughter->daughter->son->son)	0.0078125
+FAM1	G6-38	G5-19	G5-19P	2	-9	second cousin twice removed (proband->father->father->sister->daughter->daughter->son->daughter)	0.0078125
+FAM1	G6-39	G5-20	G5-20P	1	-9	second cousin twice removed (proband->father->father->sister->daughter->daughter->daughter->son)	0.0078125
+FAM1	G6-40	G5-20	G5-20P	2	-9	second cousin twice removed (proband->father->father->sister->daughter->daughter->daughter->daughter)	0.0078125
+FAM1	G6-41	G5-21	G5-21P	1	-9	second cousin twice removed (proband->father->mother->brother->son->son->son->son)	0.0078125
+FAM1	G6-42	G5-21	G5-21P	2	-9	second cousin twice removed (proband->father->mother->brother->son->son->son->daughter)	0.0078125
+FAM1	G6-43	G5-22	G5-22P	1	-9	second cousin twice removed (proband->father->mother->brother->son->son->daughter->son)	0.0078125
+FAM1	G6-44	G5-22	G5-22P	2	-9	second cousin twice removed (proband->father->mother->brother->son->son->daughter->daughter)	0.0078125
+FAM1	G6-45	G5-23	G5-23P	1	-9	second cousin twice removed (proband->father->mother->brother->son->daughter->son->son)	0.0078125
+FAM1	G6-46	G5-23	G5-23P	2	-9	second cousin twice removed (proband->father->mother->brother->son->daughter->son->daughter)	0.0078125
+FAM1	G6-47	G5-24	G5-24P	1	-9	second cousin twice removed (proband->father->mother->brother->son->daughter->daughter->son)	0.0078125
+FAM1	G6-48	G5-24	G5-24P	2	-9	second cousin twice removed (proband->father->mother->brother->son->daughter->daughter->daughter)	0.0078125
+FAM1	G6-49	G5-25	G5-25P	1	-9	second cousin twice removed (proband->father->mother->brother->daughter->son->son->son)	0.0078125
+FAM1	G6-50	G5-25	G5-25P	2	-9	second cousin twice removed (proband->father->mother->brother->daughter->son->son->daughter)	0.0078125
+FAM1	G6-51	G5-26	G5-26P	1	-9	second cousin twice removed (proband->father->mother->brother->daughter->son->daughter->son)	0.0078125
+FAM1	G6-52	G5-26	G5-26P	2	-9	second cousin twice removed (proband->father->mother->brother->daughter->son->daughter->daughter)	0.0078125
+FAM1	G6-53	G5-27	G5-27P	1	-9	second cousin twice removed (proband->father->mother->brother->daughter->daughter->son->son)	0.0078125
+FAM1	G6-54	G5-27	G5-27P	2	-9	second cousin twice removed (proband->father->mother->brother->daughter->daughter->son->daughter)	0.0078125
+FAM1	G6-55	G5-28	G5-28P	1	-9	second cousin twice removed (proband->father->mother->brother->daughter->daughter->daughter->son)	0.03125
+FAM1	G6-56	G5-28	G5-28P	2	-9	second cousin twice removed (proband->father->mother->brother->daughter->daughter->daughter->daughter)	0.03125
+FAM1	G6-57	G5-29	G5-29P	1	-9	second cousin twice removed (proband->mother->father->sister->son->son->son->son)	0.0078125
+FAM1	G6-58	G5-29	G5-29P	2	-9	second cousin twice removed (proband->mother->father->sister->son->son->son->daughter)	0.0078125
+FAM1	G6-59	G5-30	G5-30P	1	-9	second cousin twice removed (proband->mother->father->sister->son->son->daughter->son)	0.0078125
+FAM1	G6-60	G5-30	G5-30P	2	-9	second cousin twice removed (proband->mother->father->sister->son->son->daughter->daughter)	0.0078125
+FAM1	G6-61	G5-31	G5-31P	1	-9	second cousin twice removed (proband->mother->father->sister->son->daughter->son->son)	0.0078125
+FAM1	G6-62	G5-31	G5-31P	2	-9	second cousin twice removed (proband->mother->father->sister->son->daughter->son->daughter)	0.0078125
+FAM1	G6-63	G5-32	G5-32P	1	-9	second cousin twice removed (proband->mother->father->sister->son->daughter->daughter->son)	0.0078125
+FAM1	G6-64	G5-32	G5-32P	2	-9	second cousin twice removed (proband->mother->father->sister->son->daughter->daughter->daughter)	0.0078125
+FAM1	G6-65	G5-33	G5-33P	1	-9	second cousin twice removed (proband->mother->father->sister->daughter->son->son->son)	0.0078125
+FAM1	G6-66	G5-33	G5-33P	2	-9	second cousin twice removed (proband->mother->father->sister->daughter->son->son->daughter)	0.0078125
+FAM1	G6-67	G5-34	G5-34P	1	-9	second cousin twice removed (proband->mother->father->sister->daughter->son->daughter->son)	0.0078125
+FAM1	G6-68	G5-34	G5-34P	2	-9	second cousin twice removed (proband->mother->father->sister->daughter->son->daughter->daughter)	0.0078125
+FAM1	G6-69	G5-35	G5-35P	1	-9	second cousin twice removed (proband->mother->father->sister->daughter->daughter->son->son)	0.0078125
+FAM1	G6-70	G5-35	G5-35P	2	-9	second cousin twice removed (proband->mother->father->sister->daughter->daughter->son->daughter)	0.0078125
+FAM1	G6-71	G5-36	G5-36P	1	-9	second cousin twice removed (proband->mother->father->sister->daughter->daughter->daughter->son)	0.0078125
+FAM1	G6-72	G5-36	G5-36P	2	-9	second cousin twice removed (proband->mother->father->sister->daughter->daughter->daughter->daughter)	0.0078125
+FAM1	G6-73	G5-37	G5-37P	1	-9	second cousin twice removed (proband->mother->mother->brother->son->son->son->son)	0.0078125
+FAM1	G6-74	G5-37	G5-37P	2	-9	second cousin twice removed (proband->mother->mother->brother->son->son->son->daughter)	0.0078125
+FAM1	G6-75	G5-38	G5-38P	1	-9	second cousin twice removed (proband->mother->mother->brother->son->son->daughter->son)	0.0078125
+FAM1	G6-76	G5-38	G5-38P	2	-9	second cousin twice removed (proband->mother->mother->brother->son->son->daughter->daughter)	0.0078125
+FAM1	G6-77	G5-39	G5-39P	1	-9	second cousin twice removed (proband->mother->mother->brother->son->daughter->son->son)	0.0078125
+FAM1	G6-78	G5-39	G5-39P	2	-9	second cousin twice removed (proband->mother->mother->brother->son->daughter->son->daughter)	0.0078125
+FAM1	G6-79	G5-40	G5-40P	1	-9	second cousin twice removed (proband->mother->mother->brother->son->daughter->daughter->son)	0.0078125
+FAM1	G6-80	G5-40	G5-40P	2	-9	second cousin twice removed (proband->mother->mother->brother->son->daughter->daughter->daughter)	0.0078125
+FAM1	G6-81	G5-41	G5-41P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->son)	0.03125
+FAM1	G6-81P	0	0	2	-9	second cousin's partner (proband->mother->mother->brother->daughter->son->son->partner)	0.0
+FAM1	G6-82	G5-41	G5-41P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->daughter)	0.03125
+FAM1	G6-82P	0	0	1	-9	second cousin's partner (proband->mother->mother->brother->daughter->son->daughter->partner)	0.0
+FAM1	G6-83	G5-42	G5-42P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->daughter->son)	0.03125
+FAM1	G6-83P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->son->daughter->son->partner)	0.0
+FAM1	G6-84	G5-42	G5-42P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->son->daughter->daughter)	0.03125
+FAM1	G6-84P	0	0	1	-9	second cousin's partner (proband->mother->mother->brother->daughter->son->daughter->daughter->partner)	0.0
+FAM1	G6-85	G5-43	G5-43P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->son->son)	0.03125
+FAM1	G6-85P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->daughter->son->son->partner)	0.0
+FAM1	G6-86	G5-43	G5-43P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->son->daughter)	0.03125
+FAM1	G6-86P	0	0	1	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->daughter->son->daughter->partner)	0.0
+FAM1	G6-87	G5-44	G5-44P	1	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->daughter->son)	0.03125
+FAM1	G6-87P	0	0	2	-9	second cousin once removed's partner (proband->mother->mother->brother->daughter->daughter->daughter->son->partner)	0.0
+FAM1	G6-88	G5-44	G5-44P	2	-9	second cousin once removed (proband->mother->mother->brother->daughter->daughter->daughter->daughter)	0.03125
+FAM1	G6-88P	0	0	1	-9	second cousin's partner (proband->mother->mother->brother->daughter->daughter->daughter->daughter->partner)	0.0
